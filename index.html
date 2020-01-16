@@ -1,0 +1,93 @@
+<html>
+<head>
+
+    <title>Belajar Tab HTML CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="hero">
+       <div class="btn-box">
+           <button id="btn1" onclick="openABOUT()">ABOUT</button>
+           <button id="btn2" onclick="openLEGENDS()">LEGENDS</button>
+           <button id="btn3" onclick="openCHAMPIONS()">CHAMPIONS</button>
+       </div> 
+       <div id="content1" class="content">
+           <div class="content-left">
+                <h1>FC BARCELONA</h1>
+                <p>Didirikan pada tahun 1899 oleh sekelompok pemain Swiss, Inggris dan Catalan yang dipimpin oleh Joan Gamper, klub telah menjadi simbol budaya Catalan dan Catalanisme, yang mempunyai motto "Més que un club" (Lebih dari sebuah klub). Tidak seperti banyak klub sepak bola lainnya, para pendukung memiliki dan mengoperasikan Barcelona. Ia adalah klub sepak bola kedua terkaya di dunia dalam hal pendapatan, dengan omset tahunan sebesar €560,8 juta dan kedua yang paling berharga, senilai $3,56 miliar.</p>
+                <a href="#">Read More...</a>
+           </div>
+           <div class="content-right">
+                <img src="barca3.jpg">
+           </div>
+       </div>
+       <div id="content2" class="content">
+            <div class="content-left">
+                <h1>LEGENDS</h1>
+                <p>Barça Legends adalah program yang dibuat pada tahun 2016 dan dijalankan oleh FC Barcelona. Tujuannya adalah untuk melibatkan mantan pemain Barça ke proyek untuk menciptakan kolaborasi profesional yang berkontribusi terhadap globalisasi merek Barça di seluruh dunia dan menunjukkan nilai-nilai yang dipegang FC Barcelona.</p>
+                <a href="#">Read More...</a>
+             </div>
+            <div class="content-right">
+                <img src="barca2.jpg">
+             </div>
+         </div>
+         <div id="content3" class="content">
+            <div class="content-left">
+                <h1>CHAMPIONE</h1>
+                <p>Hingga Mei 2016, Barcelona telah memenangkan 26 La Liga, 30 Copa del Rey, 13 Supercopa de España, 3 Copa Eva Duarte dan 2 piala Copa de la Liga, serta menjadi pemegang rekor untuk empat kompetisi terakhir. Juga mereka telah memenangkan 5 Liga Champions, rekor 4 Piala Winners UEFA, 5 Piala Super UEFA dan tiga rekor Piala Dunia Antarklub FIFA. Mereka juga memenangkan rekor 3 Piala Inter-Cities Fairs, dianggap pendahulu ke Piala UEFA/Liga Eropa.</p>
+                <a href="#">Read More...</a>
+             </div>
+            <div class="content-right">
+                <img src="barca1.jpg">
+             </div>
+         </div>
+    </div>
+
+    <script>
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var content3 = document.getElementById("content3");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+
+        function openABOUT(){
+            content1.style.transform = "translateX(0)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            btn1.style.color = "#ff7846";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+            content1.style.transitionDelay = "0.3s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+        }
+        function openLEGENDS(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(0)";
+            content3.style.transform = "translateX(100%)";
+            btn1.style.color = "#ff7846";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0.3s";
+            content3.style.transitionDelay = "0s";
+        }
+        function openCHAMPIONS(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(0)";
+            btn1.style.color = "#ff7846";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0.3s";
+        }
+    </script>
+
+</body>
+</html>
